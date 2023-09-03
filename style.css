@@ -1,0 +1,108 @@
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and font for the whole page */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#title {
+    font-size: 24px;
+}
+
+/* Style the section containing the form */
+section {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form groups */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Style labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style input fields and textareas */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style the select dropdown */
+select {
+    height: 35px;
+}
+
+/* Style radio buttons and checkboxes */
+.radio-options input[type="radio"],
+.radio-options input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Style the submit button */
+#submit {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+/* Style the "Print" button for printing */
+@media print {
+    /* Add a page break before the "Print" button */
+    #printButton {
+      page-break-before: always;
+      margin-top: 10px; /* Add some space above the button */
+    }
+    
+    /* Customize the appearance of the button */
+    #printButton {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 6pt 12pt;
+      border-radius: 4px;
+      font-size: 12pt;
+      cursor: pointer;
+    }
+    
+    /* Hide the "Print" button on the printed page */
+    #printButton {
+      display: none;
+    }
+  }
+  
+
+#submit:hover {
+    background-color: #555;
+}
